@@ -67,6 +67,7 @@ def _truncate_and_convert_digest(digest, curve, allow_truncate):
                 )
             )
     else:
+        print "hello"
         digest = digest[: curve.baselen]
     number = string_to_number(digest)
     if allow_truncate:
